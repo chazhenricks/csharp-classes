@@ -71,13 +71,7 @@ namespace classes
             Company.AddEmployee(chaz);
             Company.AddEmployee(steve);
             Company.AddEmployee(matt);
-
-            // List<Employee> EmployeeList = new List<Employee>(){
-            // new Employee("Chaz", "Developer", "Sept 22"),
-            // new Employee("Tiny Rick", "Scientist", "Sept 21"),
-            // new Employee("Steve", "Janitor", "Sept 23")
-        // };
-
+s
 
             Company.ListEmployees();
             Company.RemoveEmployee(matt);

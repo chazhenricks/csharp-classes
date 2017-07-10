@@ -32,7 +32,7 @@ namespace classes
 
         public Company(string name){
             this.Name = name;
-            this.CreatedOn = new DateTime();
+            this.CreatedOn = DateTime.Now;
         }
     }
     
@@ -58,9 +58,13 @@ namespace classes
 
             new Company("NSS");
 
-            Company.EmployeeList.Add(new Employee("Chaz", "Developer", "Sept 22"));
-            Company.EmployeeList.Add(new Employee("Matt", "Cool Guy", "Sept 21"));
-            Company.EmployeeList.Add(new Employee("Steve", "Does Stuff", "Sept 20"));
+            Employee chaz = new Employee("Chaz", "Developer", "Sept 22");
+            Employee matt = new Employee("Matt", "Cool Guy", "Sept 21");
+            Employee steve = new Employee("Steve", "Does Stuff", "Sept 20");
+
+            Company.AddEmployee(chaz);
+            Company.AddEmployee(steve);
+            Company.AddEmployee(matt);
 
             // List<Employee> EmployeeList = new List<Employee>(){
             // new Employee("Chaz", "Developer", "Sept 22"),
@@ -73,6 +77,12 @@ namespace classes
                 Console.WriteLine($"{e.name} {e.jobTitle} {e.startDate}");
             }
 
+            Company.RemoveEmployee(matt);
+
+
+            foreach(Employee e in Company.EmployeeList){
+                Console.WriteLine($"{e.name} {e.jobTitle} {e.startDate}");
+            }
         }
     }
 }

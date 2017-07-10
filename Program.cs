@@ -23,6 +23,12 @@ namespace classes
         public static void RemoveEmployee(Employee emp){
             EmployeeList.Remove(emp);
         }
+
+        public static void ListEmployees(){
+            foreach(Employee e in Company.EmployeeList){
+                Console.WriteLine($"{e.name} {e.jobTitle} {e.startDate}");
+            }
+        }
         /*
             Create a constructor method that accepts two arguments:
                 1. The name of the company
@@ -73,16 +79,9 @@ namespace classes
         // };
 
 
-            foreach(Employee e in Company.EmployeeList){
-                Console.WriteLine($"{e.name} {e.jobTitle} {e.startDate}");
-            }
-
+            Company.ListEmployees();
             Company.RemoveEmployee(matt);
-
-
-            foreach(Employee e in Company.EmployeeList){
-                Console.WriteLine($"{e.name} {e.jobTitle} {e.startDate}");
-            }
+            Company.ListEmployees();
         }
     }
 }

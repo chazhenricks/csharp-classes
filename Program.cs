@@ -16,15 +16,15 @@ namespace classes
         public static List<Employee> EmployeeList = new List<Employee>();
 
         // Create a method that allows external code to add an employee
-        public static void AddEmployee(Employee emp){
+        public void AddEmployee(Employee emp){
             EmployeeList.Add(emp);
         }
         // Create a method that allows external code to remove an employee
-        public static void RemoveEmployee(Employee emp){
+        public void RemoveEmployee(Employee emp){
             EmployeeList.Remove(emp);
         }
 
-        public static void ListEmployees(){
+        public void ListEmployees(){
             foreach(Employee e in Company.EmployeeList){
                 Console.WriteLine($"{e.name} {e.jobTitle} {e.startDate}");
             }
@@ -62,20 +62,22 @@ namespace classes
 
         public static void Main(){
 
-            new Company("NSS");
+            Company ChazCOM = new Company("CHAZCOM");
 
             Employee chaz = new Employee("Chaz", "Developer", "Sept 22");
             Employee matt = new Employee("Matt", "Cool Guy", "Sept 21");
             Employee steve = new Employee("Steve", "Does Stuff", "Sept 20");
 
-            Company.AddEmployee(chaz);
-            Company.AddEmployee(steve);
-            Company.AddEmployee(matt);
-s
+            ChazCOM.AddEmployee(chaz);
+            ChazCOM.AddEmployee(steve);
+            ChazCOM.AddEmployee(matt);
 
-            Company.ListEmployees();
-            Company.RemoveEmployee(matt);
-            Company.ListEmployees();
+
+            ChazCOM.ListEmployees();
+            ChazCOM.RemoveEmployee(matt);
+            ChazCOM.ListEmployees();
+
+            Console.WriteLine($"{ChazCOM.Name} {ChazCOM.CreatedOn}");
         }
     }
 }

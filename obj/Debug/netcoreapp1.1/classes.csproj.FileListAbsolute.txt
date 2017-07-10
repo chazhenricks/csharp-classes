@@ -1,0 +1,8 @@
+/Users/chazhenricks/workspace/csharp/orientation/exercises/classes/bin/Debug/netcoreapp1.1/classes.deps.json
+/Users/chazhenricks/workspace/csharp/orientation/exercises/classes/bin/Debug/netcoreapp1.1/classes.runtimeconfig.json
+/Users/chazhenricks/workspace/csharp/orientation/exercises/classes/bin/Debug/netcoreapp1.1/classes.runtimeconfig.dev.json
+/Users/chazhenricks/workspace/csharp/orientation/exercises/classes/bin/Debug/netcoreapp1.1/classes.dll
+/Users/chazhenricks/workspace/csharp/orientation/exercises/classes/bin/Debug/netcoreapp1.1/classes.pdb
+/Users/chazhenricks/workspace/csharp/orientation/exercises/classes/obj/Debug/netcoreapp1.1/classes.AssemblyInfo.cs
+/Users/chazhenricks/workspace/csharp/orientation/exercises/classes/obj/Debug/netcoreapp1.1/classes.dll
+/Users/chazhenricks/workspace/csharp/orientation/exercises/classes/obj/Debug/netcoreapp1.1/classes.pdb
